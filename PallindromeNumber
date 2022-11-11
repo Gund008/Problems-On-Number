@@ -1,0 +1,61 @@
+//Write a Program Accept one Number from user and check whether Number is Pallindrome Or Not
+
+#include<stdio.h>
+#include<stdbool.h>
+#define TRUE 1
+#define FALSE 0
+//////////////////////////////////////////////////////////////////////////////////////////////
+/*
+Function Name:Check
+Description:To Check whether Input is Pallindrome or Not
+Input:Integer
+Output:Integer
+Auther:Sukanya
+Date:11/11/2022
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+bool Check(int iValue)
+{
+    int iDigit=0;
+    int iRev=0;
+    int iTemp=iValue;
+
+    while(iValue!=0)
+    {
+        iDigit=iValue % 10;
+        iRev=(iRev * 10) +iDigit;
+        iValue=iValue /10;
+    }
+    if(iTemp==iRev)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iNo=0;
+    bool bRet=FALSE;
+
+    printf("Enter Number:\n");
+    scanf("%d",&iNo);
+
+    bRet=Check(iNo);
+
+    if(bRet==TRUE)
+    {
+        printf("%d Number is Pallindrome:",iNo);
+    }
+    else
+    {
+         printf("%d Number is Not Pallindrome:",iNo);
+    }
+
+    return 0;
+}

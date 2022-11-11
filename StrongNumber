@@ -1,0 +1,70 @@
+/*
+Input-145
+Outpurt-Strong Number
+
+*/
+
+#include<stdio.h>
+#define TRUE 1
+#define FALSE 0
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+/*
+Function Name:Factor
+Description:check Whether Input is Strong or not
+Input:Integer
+Output:Integer
+Auther:Sukanya
+Date:11/11/2022
+*/
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+bool Factor(int iValue)
+{
+    int iDigit=0;
+    int iFact=1,iSum=0,i=0;
+    int Temp=iValue;
+
+    while(iValue!=0)
+    {
+         iDigit=iValue % 10;
+
+         for(i=1;i<=iDigit;i++)
+         { 
+           iFact=iFact * i;
+         }
+         iSum=iSum + iFact;
+         iValue=iValue / 10;
+    }
+    if(Temp==iSum)
+    {
+        return 1;
+    }
+    else
+    {
+       return 0;
+    }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+int main()
+{
+    int iNo=0;
+    bool bRet=FALSE;
+
+    printf("Enter the Number:\n");
+    scanf("%d",&iNo);
+    
+    bRet=Factor(iNo);
+
+    if(bRet==TRUE)
+    {
+        printf("%d is Number is Strong Number:%d\n",iValue);
+    }
+    else
+    {
+        printf("%d Number is Not Strong number",iValue);
+    }
+
+    return 0;
+
+}
