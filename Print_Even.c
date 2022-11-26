@@ -14,7 +14,7 @@ void PrintEven(int iValue)
         return;
     }
 
-    for(iCnt=1;iCnt<=14;iCnt++)
+    for(iCnt=1;iCnt<=iValue;iCnt++)
     {
         if((iCnt % 2)==0)
         {
