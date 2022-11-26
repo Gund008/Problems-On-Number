@@ -14,7 +14,7 @@ int FactDiff(int iNo)
    int iSum1=0;
 
 
-   for(iCnt=1;iCnt<12;iCnt++)
+   for(iCnt=1;iCnt<iNo;iCnt++)
    {
        if((iNo % iCnt)==0)
        {
@@ -22,7 +22,7 @@ int FactDiff(int iNo)
        }
    }
   
-    for(iCnt=1;iCnt<12;iCnt++)
+    for(iCnt=1;iCnt<iNo;iCnt++)
    {
        if((iNo % iCnt)!=0)
        {
