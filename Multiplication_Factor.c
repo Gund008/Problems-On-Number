@@ -32,7 +32,7 @@ int main()
     scanf("%d",&iValue);
 
    iRet= MultFact(iValue);
-   printf("%d",iRet);
+   printf("%d\n",iRet);
 
     return 0;
 }
