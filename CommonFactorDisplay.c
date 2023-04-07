@@ -16,7 +16,16 @@
 void CommonFactorDisplay(int iValue1,int iValue2)
 {
     int iCnt=0;
-
+    
+    if(iValue1  < 0)
+    {
+        iValue1=-iValue1;
+    }
+    if(iValue2 < 0)
+    {
+        iValue2=-iValue2;
+    }
+       
     printf("Common Factor are:\n");
     for(iCnt=1;iCnt<=(iValue1/2)&&(iValue2/2);iCnt++)
     {
