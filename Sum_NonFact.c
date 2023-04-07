@@ -10,6 +10,11 @@ int SumNonFact(int iNo)
     int iCnt=0;
     iCnt=1;
     int iSum=0;
+    
+    if(iNo < 0 )
+    {
+       iNo=-iNo;
+    }
 
     for(iCnt=1;iCnt<=iNo;iCnt++)
     {
