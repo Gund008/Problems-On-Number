@@ -4,10 +4,16 @@
 //Output :2 4 6 8 10 12 14 
 //////////////////////////////////////////////////////////////////
 #include<stdio.h>
+
 void PrintEven(int iValue)
 {
     int iCnt=0;
     iCnt=1;
+    
+    if(iValue < 0)
+    {
+       iValue=-iValue;
+    }
 
     if(iValue<=0)
     {
