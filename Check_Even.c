@@ -11,6 +11,12 @@ BOOL ChkEven(int iNo)
 {
      int iValue=0;
      iValue=iNo % 2;
+     
+     if(iNo < 0)
+     {
+         iNo=-iNo;
+     }
+     
      if(iValue==0)
     {
         return 1;
