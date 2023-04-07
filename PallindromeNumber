@@ -20,7 +20,11 @@ bool Check(int iValue)
     int iDigit=0;
     int iRev=0;
     int iTemp=iValue;
-
+    
+    if(iValue < 0)
+    {
+       iValue=-iValue;
+    }
     while(iValue!=0)
     {
         iDigit=iValue % 10;
