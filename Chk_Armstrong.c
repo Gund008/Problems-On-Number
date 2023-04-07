@@ -6,6 +6,15 @@ int Power(int iNo1,int iNo2)
 {
     int iMult=0;
     register int iCnt=0;
+    
+    if(iNo1 < 0)
+    {
+       iNo1=-iNo;
+    }
+    if(iNo2 < 0)
+    {
+       iNo2=-iNo2;
+    }
 
     for(iCnt=1;iCnt<=iNo2;iCnt++)
     {
