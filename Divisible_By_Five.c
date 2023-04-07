@@ -8,6 +8,11 @@ typedef int BOOL;  //typedef existing data_type new_name
 
 BOOL Check(int iNo)
 {
+    if(iNo < 0)
+    {
+       iNo=-iNo;
+    }
+    
     if((iNo % 5)==0)
     {
         return TRUE;
