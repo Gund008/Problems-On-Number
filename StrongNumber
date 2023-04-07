@@ -23,6 +23,11 @@ bool Factor(int iValue)
     int iDigit=0;
     int iFact=1,iSum=0,i=0;
     int Temp=iValue;
+    
+    if(iValue < 0)
+    {
+       iValue=-iValue;
+    }
 
     while(iValue!=0)
     {
