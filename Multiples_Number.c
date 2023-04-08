@@ -6,7 +6,11 @@
 
 void MultipleDisplay(int iNo)
 {
-    int iCnt=1;
+    auto int iCnt=1;
+    if(iNo < 0)
+    {
+        iNo=-iNo;
+    }
     
     for(iCnt=1;iCnt<=iNo+1;iCnt++)
     {
