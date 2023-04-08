@@ -20,8 +20,7 @@
 void RangeDisplayEven(int iStart,int iEnd)
 {
             int iCnt=1;
-
-
+            
             if(iStart<0)     //updator
             {
               iStart=-iStart;
