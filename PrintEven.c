@@ -8,7 +8,12 @@ void PrintEven(int iValue)
 {
     int iCnt=0;
     iCnt=1;
-
+    
+    if(iValue < 0)
+    {
+        iValue=-iValue;
+    }
+    
     if(iValue<=0)
     {
         return;
