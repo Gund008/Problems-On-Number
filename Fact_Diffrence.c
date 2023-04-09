@@ -12,7 +12,11 @@ int FactDiff(int iNo)
    int iCnt1=1;
    int iSum=0;
    int iSum1=0;
-
+   
+   if(iNo < 0)
+   {
+      iNo=-iNo;
+   }
 
    for(iCnt=1;iCnt<iNo;iCnt++)
    {
